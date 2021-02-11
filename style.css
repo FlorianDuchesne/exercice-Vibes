@@ -21,6 +21,7 @@ body{
     position: relative;
     background: rgb(233,184,78);
     background: linear-gradient(103deg, rgba(233,184,78,1) 0%, rgba(238,151,95,1) 35%, rgba(255,75,114,1) 100%);
+    margin: 0%;
 }
 
 .container{
@@ -37,7 +38,7 @@ body{
 
 header{
     margin: auto;
-    width: 70%;
+    width: 80%;
     justify-content: space-between;
     align-items: center;
 }
@@ -54,6 +55,13 @@ header figure{
     color: white;
     font-size:medium;
     width: 30px;
+    transition: 0.5s;
+    margin: 0 0 0 3em;
+}
+
+#burger:hover{
+    background-color: white;
+    color:gainsboro;
 }
 
 #burger i{
@@ -61,9 +69,17 @@ header figure{
 }
 
 nav{
-    width: 70%;
     justify-content: space-around;
     align-items: center;
+}
+
+nav a{
+    padding: 0.5em;
+    transition: 0.5s;
+}
+
+nav a:hover{
+    color:gainsboro;
 }
 
 .maj{
@@ -123,6 +139,12 @@ nav{
     border: white solid 2px;
     margin: 1em 1em 4em 1em;
     text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.bouton:hover{
+    background-color: white;
+    color:gainsboro;
 }
 
 /* ABOUT */
@@ -239,7 +261,13 @@ nav{
     height: 30px;
     color: rgb(146, 146, 146);
     font-size: small;
+    transition: 0.5s;
 }
+
+.rowGalerie button:hover{
+    color:gainsboro;
+}
+
 
 .rowGalerie .bouton{
     margin: 0 0 0 0;
@@ -254,7 +282,14 @@ nav{
     padding: 1em 1em 1em 1em;
     border:crimson solid 2px;
     height: 60px;
+    transition: 0.5s;
 }
+
+.rowGalerie .bouton:hover{
+    background-color: crimson;
+    color:rgb(255, 255, 255);
+}
+
 
 /* TESTIMONIALS */ 
 
@@ -332,7 +367,14 @@ padding-bottom: 2em;
     border-color: crimson;
     width: 250px;
     margin: 3em 0 3em 0;
+    transition: 0.5s;
 }
+
+#testimonials .bouton:hover{
+    background-color: crimson;
+    color:rgb(255, 255, 255);
+}
+
 
 #Pages{
     flex-direction: column;
@@ -346,7 +388,14 @@ padding-bottom: 2em;
     border-color: crimson;
     margin: 3em 0 3em 0;
     width: 330px;
+    transition: 0.5s;
 }
+
+#Pages .bouton:hover{
+    background-color: crimson;
+    color:rgb(255, 255, 255);
+}
+
 
 #Pages h2{
     color: white;
@@ -404,6 +453,10 @@ padding-bottom: 2em;
     background-color: crimson;
     color: white;
     width: 60px;
+}
+
+#contact .send:active{
+    background-color: rgb(134, 27, 48);
 }
 
 #aboutEnd{
@@ -470,7 +523,13 @@ padding-bottom: 2em;
     margin: 1em 0 1em 0;
     padding: 0.5em;
     width: 130px;
+    transition: 0.5s;
 }
+
+#aboutEnd form input:last-child:hover{
+    background-color: crimson;
+}
+
 
 .up{
     font-size: x-large;
@@ -499,4 +558,112 @@ footer a{
     cursor: pointer;
 }
 
+/* RESPONSIVE */
+
+@media only screen and (max-width: 600px) { /* responsive téléphones */
+
+    #home h1{
+        font-size: large;
+    }
+
+    #home .bouton{
+        width: 45%;
+    }
+
+    #about{
+        flex-direction: column;
+    }
+
+    #about article{
+        width: 90%;
+        margin: auto;
+    }
+
+    #about .colonne{
+        margin: 2em 0 0 0em;
+    }
+
+    #portfolio .rowGalerie{
+        padding: 1em 0 1em 0em;
+    }
+
+    #portfolio .rowGalerie .bouton{
+        width: 30%;
+    }
+
+    h2{
+        width: 100%;
+    }
+
+    #testimonials figure{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #testimonials .reverse{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #testimonials img{
+        width: 25%;
+    }
+
+    #contact form{
+        flex-direction: column;
+    }   
+
+    #contact div{
+        margin: 0;
+    }
+
+    #aboutEnd{
+        flex-direction: column;
+    }
+
+    #aboutEnd div{
+        width: 80%;
+    }      
+
+    .up{
+        bottom: 65px;
+    }
+
+} 
+
+@media only screen and (max-width: 768px) { /* responsive tablettes */
+
+    .container{
+        width: 100%;
+    }
+
+    header{
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    nav{
+        justify-content: flex-end;
+    }
+
+    nav a{
+        display: none;
+    }
+
+    .galerie figure{
+        width:50%;
+    }    
+
+    .responsive{
+        display: none;
+    }
+
+    .rowGalerie .bouton{
+        padding: 0.5em 1em 1em 1em;
+    }
+
+    .up{
+        right: 0;
+    }
+} 
 
