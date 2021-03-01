@@ -9,8 +9,16 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="lightbox" class="flex">
+        <i id="croix" class="fas fa-times"></i>
+        <i id="left" class="fas fa-arrow-left"></i>
+        <figure>
+            <!-- <img src="…"> -->
+        </figure>    
+        <i id="right" class="fas fa-arrow-right"></i>
+    </div>
     <header class="flex">
-        <figure><img src="img/vibes-logo.png"></figure>
+        <a id="logo"><img src="img/vibes-logo.png"></a> 
         <nav class="flex">
             <a href="" class="maj">Home</a>
             <a href="" class="maj">About</a>
@@ -18,8 +26,8 @@
             <a href="" class="maj">Testimonials</a>
             <a href="" class="maj">Contact</a>
             <a href="" class="maj">Pages</a>
-            <button id="burger"><i class="fas fa-bars"></i></button>
         </nav>
+        <a id="burger"><i class="fas fa-bars"></i></a>
     </header>
     <div class="container">
         <section id="home" class="flex">
@@ -33,102 +41,132 @@
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum sit nisi sapiente, blanditiis dolorem doloribus harum atque dolor optio natus ullam voluptate! </p>
                 <p class="small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum, accusamus dolor doloremque impedit architecto similique nulla tempore enim dolorum? Maxime eaque qui sed sint quae inventore sunt <b>dolores obcaecati corporis?</b></p>
             </article>
-            <article>
+            <article class="what">
                 <h3>What You Get ?</h3>
                 <div>
-                    <figure class="flex">
+                    <div class="boite flex">
                         <i class="fab fa-wordpress"></i>
-                        <figcaption>
+                        <div class="contenuBoite">
                             <h6 class="maj">colorful & compact</h6>
                             <p class="min">Portfolio Wordpress Theme</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="flex">
+                        </div>
+                    </div>
+                    <div class="boite flex">
                         <i class="fas fa-cog"></i>
-                        <figcaption>
+                        <div class="contenuBoite">
                             <h6 class="maj">very easy to use</h6>
                             <p class="min">Page Builder & Shortcodes</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="flex">
+                        </div>
+                    </div>
+                    <div class="boite flex">
                         <i class="far fa-paper-plane"></i>
-                        <figcaption>
+                        <div class="contenuBoite">
                             <h6 class="maj">Coded with Sass</h6>
                             <p class="min">Create Custom Skins in Minutes</p>
-                        </figcaption>
-                    </figure>
+                        </div>
+                    </div>
                 </div>
             </article>
             <div class="colonne">
                 <article>
-                    <div class="flex">
-                        <button><i class="fas fa-minus"></i></button>
-                        <h6 class="maj">Nulla Consequat Massa</h6>
-                    </div>
-                    <p class="min">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ipsa deleniti? Corporis, atque!</p>
+                        <button class="collapse flex">
+                            <i class="fas fa-plus"></i>
+                            <h6 class="maj">Nulla Consequat Massa</h6>
+                        </button>
+                        <p class="min hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ipsa deleniti? Corporis, atque!</p>
                 </article>
                 <article>
-                    <div class="flex">
-                        <button><i class="fas fa-plus"></i></button>
-                        <h6 class="maj">Vivamus Elementum Semper</h6>
-                    </div>
-                    <p class="min hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ipsa deleniti? Corporis, atque!</p>
+                        <button class="collapse flex">
+                            <i class="fas fa-plus"></i>
+                            <h6 class="maj">Vivamus Elementum Semper</h6>
+                        </button>
+                        <p class="min hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ipsa deleniti? Corporis, atque!</p>
                 </article>
                 <article>
-                    <div class="flex">
-                        <button><i class="fas fa-plus"></i></button>
-                        <h6 class="maj">Etiam ultricies nisi vel</h6>
-                    </div>
-                    <p class="min hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ipsa deleniti? Corporis, atque!</p>
+                        <button class="collapse flex">
+                            <i class="fas fa-plus"></i>
+                            <h6 class="maj">Etiam ultricies nisi vel</h6>
+                        </button>
+                        <p class="min hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ipsa deleniti? Corporis, atque!</p>
                 </article>
             </div>
         </section>
         <section id="portfolio">
             <div class="flex galerie">
-                <figure class="image all"><img src="img/jaume-rovira-llorca-a1.jpg"></figure>
-                <figure class="audio all"><img src="img/jaume-rovira-llorca-a2.jpg"></figure>
-                <figure class="image all"><img src="img/jaume-rovira-llorca-a3.jpg"></figure>
-                <figure class="audio all"><img src="img/jaume-rovira-llorca-b1.jpg"></figure>
-                <figure class="responsive video all"><img src="img/jaume-rovira-llorca-b2.jpg"></figure>
-                <figure class="responsive image all"><img src="img/jaume-rovira-llorca-d1.jpg"></figure>
-                <figure class="responsive video all"><img src="img/jaume-rovira-llorca-e1.jpg"></figure>
-                <figure class="responsive audio all"><img src="img/jaume-rovira-llorca-j1.jpg"></figure>
-                <figure class="hidden image all"><img src="img/jaume-rovira-llorca-j2.jpg"></figure>
-                <figure class="hidden audio all"><img src="img/jaume-rovira-llorca-j3.jpg"></figure>
+                <figure class="image all">
+                    <img src="img/jaume-rovira-llorca-a1.jpg" alt="image galerie">
+                    <figcaption><i class="far fa-image"></i></figcaption>
+                </figure>
+                <figure class="audio all">
+                    <img src="img/jaume-rovira-llorca-a2.jpg" alt="image galerie">
+                    <figcaption><i class="fas fa-music"></i></figcaption>
+                </figure>
+                <figure class="image all">
+                    <img src="img/jaume-rovira-llorca-a3.jpg" alt="image galerie">
+                    <figcaption><i class="far fa-image"></i></figcaption>
+                </figure>
+                <figure class="audio all">
+                    <img src="img/jaume-rovira-llorca-b1.jpg" alt="image galerie">
+                    <figcaption><i class="fas fa-music"></i></figcaption>
+                </figure>
+                <figure class="video all">
+                    <img src="img/jaume-rovira-llorca-b2.jpg" alt="image galerie">
+                    <figcaption><i class="fas fa-video"></i></figcaption>
+                </figure>
+                <figure class="image all">
+                    <img src="img/jaume-rovira-llorca-d1.jpg" alt="image galerie">
+                    <figcaption><i class="far fa-image"></i></figcaption>
+                </figure>
+                <figure class="video all">
+                    <img src="img/jaume-rovira-llorca-e1.jpg" alt="image galerie">
+                    <figcaption><i class="fas fa-video"></i></figcaption>
+                </figure>
+                <figure class="audio all">
+                    <img src="img/jaume-rovira-llorca-j1.jpg" alt="image galerie">
+                    <figcaption><i class="fas fa-music"></i></figcaption>
+                </figure>
+                <figure class="hidden image all">
+                    <img src="img/jaume-rovira-llorca-j2.jpg" alt="image galerie">
+                    <figcaption><i class="far fa-image"></i></figcaption>
+                </figure>
+                <figure class="hidden audio all">
+                    <img src="img/jaume-rovira-llorca-j3.jpg" alt="image galerie">
+                    <figcaption><i class="fas fa-music"></i></figcaption>
+                </figure>
             </div>
             <div class="flex rowGalerie">
                 <div class="flex">
-                    <button class="maj">All</button>
-                    <button class="maj">Audio</button>
-                    <button class="maj">Image</button>
-                    <button class="maj">Video</button>
+                    <button id="all" class="maj">All</button> 
+                    <button id="audio" class="maj">Audio</button>
+                    <button id="image" class="maj">Image</button>
+                    <button id="video" class="maj">Video</button>
                 </div>
                 <button class="bouton">Load More</button>
             </div>
         </section>
         <section id="testimonials" class="flex">
             <h2>Client testimonials</h2>
-            <figure class="flex border">
-                <img src="img/testimonial1.png">
-                <figcaption>
+            <article class="flex border">
+                <img src="img/testimonial1.png" alt="icone témoignage">
+                <div>
                     <blockquote>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, atque amet modi velit alias maxime fugit voluptas possimus pariatur nesciunt optio delectus minus, impedit est neque mollitia culpa assumenda! Odio.</blockquote>
                     <cite><strong>Tommy Mars</strong>, Designer</cite>
-                </figcaption>
-            </figure>
-            <figure class="flex reverse border">
-                <img src="img/testimonial2.webp">
-                <figcaption>
+                </div>
+            </article>
+            <article class="flex reverse border">
+                <img src="img/testimonial2.webp" alt="icone témoignage">
+                <div>
                     <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat libero aliquam consequatur odit earum saepe qui repellat rem! Officiis quisquam minus corrupti amet. Dicta animi at maxime numquam, veniam illum.</blockquote>
                     <cite><strong>Floor Simons</strong>, Startup CEO</cite>
-                </figcaption>
-            </figure>
-            <figure class="flex">
-                <img src="img/testimonial3.png">
-                <figcaption>
+                </div>
+            </article>
+            <article class="flex">
+                <img src="img/testimonial3.png" alt="icone témoignage">
+                <div>
                     <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, pariatur! Ducimus corrupti amet molestiae earum corporis impedit? Explicabo, molestias impedit corrupti error repudiandae non et laboriosam deleniti! Unde, pariatur rerum.</blockquote>
                     <cite><strong>Mike Neil</strong>, Rock Star</cite>
-                </figcaption>
-            </figure>
+                </div>
+            </article>
             <a href="" class="bouton">Become our client</a>
         </section>
         <section id="Pages" class="flex">
@@ -138,7 +176,7 @@
         </section>
         <section id="contact" class="flex">
             <h2>Get in touch</h2>
-            <form class="flex">
+            <form action="" method="POST" class="flex">
                 <div class="flex">
                     <label for="name">Your name<sup>*</sup></label>
                     <input type="text" id="name" name="name" required>
@@ -165,7 +203,7 @@
             <div class="flex">
                 <h4>Newsletter</h4>
                 <p><strong>VIBES</strong> contains fully working <strong>MailChimp</strong> subscribe form.</p>
-                <form>
+                <form action="" method="POST">
                     <input type="text" id="subscribe" name="subscribe" value="Your Email Address">
                     <input type="submit" value="Subscribe" class="bouton">
                 </form>
@@ -186,6 +224,7 @@
             <a>Documentation</a>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
 
