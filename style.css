@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   vertical-align: top;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 figure {
@@ -128,7 +129,6 @@ nav a:hover {
 }
 
 .maj {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   font-size: smaller;
   text-transform: uppercase;
@@ -148,12 +148,9 @@ nav a:hover {
 }
 
 #home h1 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
   font-size: xx-large;
   text-transform: uppercase;
   color: white;
-  text-decoration: none;
   text-align: center;
   margin: auto;
   width: 60%;
@@ -161,11 +158,7 @@ nav a:hover {
 }
 
 #home p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: normal;
-  font-size: medium;
   color: white;
-  text-decoration: none;
   text-align: center;
   margin: auto;
   width: 60%;
@@ -174,20 +167,21 @@ nav a:hover {
 
 .bouton {
   text-decoration: none;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: normal;
-  font-size: medium;
-  color: white;
   text-align: center;
-  width: 15%;
   padding: 1em 1em 1em 1em;
-  border: white solid 2px;
   margin: 1em 1em 4em 1em;
   text-transform: uppercase;
   transition: 0.5s;
+  font-weight: bold;
 }
 
-.bouton:hover {
+#home .bouton {
+  color: white;
+  border: white solid 2px;
+  width: 15%;
+}
+
+#home .bouton:hover {
   background-color: white;
   color: gray;
 }
@@ -201,7 +195,6 @@ nav a:hover {
 }
 
 #about h3 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 2em 1em 1em 0;
   text-align: left;
 }
@@ -209,7 +202,6 @@ nav a:hover {
 #about article {
   width: 100%;
   margin: 0 0 0 1em;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: smaller;
 }
 
@@ -228,9 +220,7 @@ nav a:hover {
 }
 
 #about .colonne article {
-  width: 100%;
   border: rgba(219, 218, 218, 0.836) solid 1px;
-  border-radius: 3px;
   padding: 0.7em;
   margin: 1em 0 0 0;
 }
@@ -254,8 +244,6 @@ nav a:hover {
 #about button {
   background: none;
   border: none;
-  width: auto;
-  height: auto;
   cursor: pointer;
 }
 
@@ -266,7 +254,6 @@ nav a:hover {
 #about .maj {
   color: black;
   margin: 0;
-  padding: 0;
 }
 
 #about .colonne h6 {
@@ -275,7 +262,6 @@ nav a:hover {
 
 #about .min {
   margin: 0;
-  padding: 0;
 }
 
 #about i {
@@ -335,7 +321,6 @@ nav a:hover {
 .rowGalerie button {
   background: none;
   border: none;
-  height: 30px;
   color: rgb(146, 146, 146);
   font-size: small;
   transition: 0.5s;
@@ -346,23 +331,21 @@ nav a:hover {
   color: crimson;
 }
 
-.rowGalerie .bouton {
-  margin: 0 0 0 0;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
-  font-size: small;
+.boutonRouge {
   color: crimson;
-  text-align: center;
-  width: 16%;
-  padding: 1em 1em 1em 1em;
   border: crimson solid 2px;
-  height: auto;
-  transition: 0.5s;
 }
 
-.rowGalerie .bouton:hover {
+.rowGalerie .boutonRouge {
+  color: crimson;
+  border: crimson solid 2px;
+  margin: 0 0 0 0;
+  width: 16%;
+  padding: 1em 1em 1em 1em;
+  height: auto;
+}
+
+.rowGalerie .boutonRouge:hover {
   background-color: crimson;
   color: rgb(255, 255, 255);
 }
@@ -370,7 +353,6 @@ nav a:hover {
 /* TESTIMONIALS */
 
 h2 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   font-size: x-large;
   text-transform: uppercase;
@@ -378,8 +360,6 @@ h2 {
   text-align: center;
   margin: 2em 0 1.5em 0;
   width: 60%;
-  padding: 0 0 0 0;
-  display: inline-block;
   position: relative;
 }
 
@@ -412,17 +392,13 @@ h2::after {
 
 #testimonials blockquote {
   margin: 0;
-  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
-    "sans-serif";
   font-style: italic;
   padding: 1em 0 1em 1em;
-  font-weight: lighter;
-  font-size: larger;
+  color: gray;
 }
 
 #testimonials cite {
   padding: 0 0 1em 1em;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: smaller;
   font-style: normal;
 }
@@ -440,47 +416,37 @@ h2::after {
   padding: 0 1em 0 1em;
 }
 
-#testimonials .bouton {
-  color: crimson;
-  border-color: crimson;
-  width: 250px;
+#testimonials .boutonRouge {
   margin: 3em 0 3em 0;
-  transition: 0.5s;
 }
 
-#testimonials .bouton:hover {
+#testimonials .boutonRouge:hover {
   background-color: crimson;
   color: rgb(255, 255, 255);
 }
 
-#Pages {
+#pages {
   flex-direction: column;
   align-items: center;
   background-image: url(img/pexels-sheena-wood-574116.jpg);
   background-size: cover;
-  min-height: auto;
   background-attachment: fixed;
 }
 
-#Pages .bouton {
+#pages .boutonRouge {
   color: white;
-  border-color: crimson;
   margin: 3em 0 3em 0;
-  width: 330px;
-  transition: 0.5s;
 }
 
-#Pages .bouton:hover {
+#pages .boutonRouge:hover {
   background-color: crimson;
-  color: rgb(255, 255, 255);
 }
 
-#Pages h2 {
+#pages h2 {
   color: white;
 }
 
-#Pages p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+#pages p {
   text-align: center;
   color: white;
   width: 60%;
@@ -503,7 +469,6 @@ h2::after {
 }
 
 #contact {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-transform: uppercase;
   color: rgb(78, 78, 78);
   font-size: small;
@@ -516,7 +481,6 @@ h2::after {
 #contact input {
   background-color: rgba(223, 223, 223, 0.637);
   border: none;
-  width: 100%;
   height: 30px;
   margin: 0.5em 0 2em 0;
 }
@@ -526,7 +490,6 @@ h2::after {
 }
 
 #contact .send {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-transform: uppercase;
   background-color: crimson;
   color: white;
@@ -542,26 +505,17 @@ h2::after {
   padding: 0 10% 5% 10%;
   color: white;
   background-color: black;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #aboutEnd div {
   width: 30%;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
 }
 
 #aboutEnd h4 {
-  font-weight: bold;
-  font-size: medium;
   text-transform: uppercase;
-  color: rgb(255, 255, 255);
-  text-align: left;
   margin: 2em 0 1.5em 0;
   width: 60%;
-  padding: 0 0 0 0;
-  display: inline-block;
   position: relative;
 }
 
@@ -576,7 +530,6 @@ h2::after {
 }
 
 #aboutEnd p {
-  text-align: left;
   font-size: small;
 }
 
@@ -589,7 +542,6 @@ h2::after {
   border: none;
   width: 80%;
   height: 30px;
-  margin: 0em 0 0 0;
   color: white;
   font-style: italic;
   padding: 0 0 0 1em;
@@ -614,14 +566,11 @@ h2::after {
   position: absolute;
   bottom: 55px;
   right: 130px;
-  background: none;
-  border: none;
   color: gray;
 }
 
 footer {
   justify-content: space-around;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: small;
   color: white;
   margin: auto;
@@ -631,7 +580,6 @@ footer {
 
 footer a {
   margin: 0 1em 0em 0;
-  padding: 0 0 0 0;
   border-bottom: white solid 1px;
   cursor: pointer;
 }
